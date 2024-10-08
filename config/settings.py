@@ -153,3 +153,26 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=20),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+
+CELERY_TIMEZONE = TIME_ZONE
+CELERY_TASK_TRACK_STARTED = True
+CELERY_TASK_TIME_LIMIT = 30 * 60
+
+# Настройки для Celery
+
+# URL-адрес брокера сообщений
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL")  # Например, Redis, который по умолчанию работает на порту 6379
+
+# URL-адрес брокера результатов, также Redis
+CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
+
+
+# Настройки для Celery Beat
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+
+CELERY_BEAT_SCHEDULE = {
+    "check_last_login": {
+        "task": "habits.tasks.habit",  # Путь к задаче
+        "schedule": timedelta(minutes=1),  # Расписание выполнения задачи
+    }
+}
