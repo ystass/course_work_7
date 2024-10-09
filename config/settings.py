@@ -177,3 +177,7 @@ CELERY_BEAT_SCHEDULE = {
         "schedule": timedelta(minutes=1),  # Расписание выполнения задачи
     }
 }
+
+TELEGRAM_URL = "https://api.telegram.org/bot"
+
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
