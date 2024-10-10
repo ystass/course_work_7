@@ -1,0 +1,104 @@
+[
+  {
+    "model": "habits.habit",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "place": "Дом",
+      "time": "2024-10-10T10:56:23Z",
+      "action": "Утренняя зарядка",
+      "is_pleasant": false,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": "чашечка кофе",
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "place": "Дом",
+      "time": "2024-10-11T10:58:00Z",
+      "action": "растяжка",
+      "is_pleasant": false,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": "чашечка кофе",
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "place": "Дом",
+      "time": "2024-10-14T18:00:00Z",
+      "action": "вечерняя прогулка",
+      "is_pleasant": true,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": null,
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 4,
+    "fields": {
+      "user": 2,
+      "place": "комната",
+      "time": "2024-10-10T11:03:38Z",
+      "action": "порядок в шкафу",
+      "is_pleasant": false,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": "прогулка",
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 5,
+    "fields": {
+      "user": 2,
+      "place": "комната",
+      "time": "2024-10-10T18:00:00Z",
+      "action": "порядок на столе",
+      "is_pleasant": false,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": "игра на компьютере",
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  },
+  {
+    "model": "habits.habit",
+    "pk": 6,
+    "fields": {
+      "user": 2,
+      "place": "комната",
+      "time": "2024-10-10T11:06:22Z",
+      "action": "зарядка",
+      "is_pleasant": false,
+      "related_habit": null,
+      "frequency_number": 1,
+      "frequency_unit": "days",
+      "reward": "прогулка на улице",
+      "duration": "00:02:00",
+      "is_public": true
+    }
+  }
+]
