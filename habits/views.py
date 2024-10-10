@@ -20,6 +20,9 @@ class HabitViewSet(viewsets.ModelViewSet):
     search_fields = ("action",)
     ordering_fields = ("time",)
 
+    def get_queryset(self):
+        return Habit.objects.filter(user=self.request.user.pk).order_by("id")
+
     def perform_create(self, serializer):
         new_habit = serializer.save()
         new_habit.user = self.request.user
